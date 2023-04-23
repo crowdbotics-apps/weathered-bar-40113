@@ -17,8 +17,8 @@ const styles = StyleSheet.create({
     height: '100%'
   },
   NHweCtAU: {
-    width: 110,
-    height: 265,
+    width: 102,
+    height: 311,
     flexDirection: "row",
     flex: 1,
     justifyContent: "center",
@@ -28,26 +28,26 @@ const styles = StyleSheet.create({
     alignItems: "start"
   },
   qnvhAiYY: {
-    width: 112,
-    height: 263,
+    width: 127,
+    height: 307,
     flexDirection: "row",
     flex: 1,
     alignItems: "start",
     justifyContent: "center",
     position: "absolute",
-    top: 0,
+    top: 2,
     left: 118
   },
   pbLZRzzl: {
-    width: 111,
-    height: 265,
+    width: 134,
+    height: 309,
     flexDirection: "row",
     flex: 1,
     position: "absolute",
-    top: 0,
+    top: -1,
     justifyContent: "center",
     alignItems: "center",
-    left: 236
+    left: 263
   }
 });
 export default Untitled1;

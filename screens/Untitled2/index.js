@@ -18,8 +18,8 @@ const styles = StyleSheet.create({
     height: '100%'
   },
   sSaElOYB: {
-    width: 109,
-    height: 189,
+    width: 239,
+    height: 309,
     flexDirection: "row",
     flex: 1,
     alignItems: "center",
@@ -40,15 +40,15 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
     position: "absolute",
-    left: 42,
-    top: 218
+    left: 117,
+    top: 324
   },
   TAQJZHYF: {
-    width: 101,
-    height: 189,
+    width: 210,
+    height: 303,
     position: "absolute",
-    top: 6,
-    left: 128
+    top: 8,
+    left: 296
   },
   ajvtSOrH: {
     width: 50,
@@ -57,10 +57,10 @@ const styles = StyleSheet.create({
     fontSize: 14,
     borderRadius: 0,
     position: "absolute",
-    top: 221,
+    top: 323,
     flexDirection: "row",
     flex: 1,
-    left: 157
+    left: 404
   }
 });
 export default Untitled2;
