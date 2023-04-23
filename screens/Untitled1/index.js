@@ -1,7 +1,10 @@
 import { ImageBackground } from "react-native";
 import { StyleSheet, ScrollView, SafeAreaView } from "react-native";
 
-const Untitled1 = () => {
+const Untitled1 = ({
+  route
+}) => {
+  const {} = route.params || {};
   return <SafeAreaView style={styles.safeArea}>
         <ScrollView contentContainerStyle={{
       backgroundColor: '#f0f0f1',
