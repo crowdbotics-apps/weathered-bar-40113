@@ -1,9 +1,12 @@
+import { useNavigation } from "@react-navigation/native";
+import { Pressable } from "react-native";
 import { ImageBackground } from "react-native";
 import { StyleSheet, ScrollView, SafeAreaView } from "react-native";
 
 const Untitled1 = ({
   route
 }) => {
+  const navigation = useNavigation();
   const {} = route.params || {};
   return <SafeAreaView style={styles.safeArea}>
         <ScrollView contentContainerStyle={{
@@ -11,7 +14,13 @@ const Untitled1 = ({
       padding: 10,
       position: 'relative',
       flex: 1
-    }}><ImageBackground style={styles.NHweCtAU} source={require("./A line.jpg")} resizeMode="cover"></ImageBackground><ImageBackground style={styles.qnvhAiYY} source={require("./ball grow.jpg")} resizeMode="cover"></ImageBackground><ImageBackground style={styles.pbLZRzzl} source={require("./Mermaid.jpg")} resizeMode="cover"></ImageBackground></ScrollView>
+    }}><Pressable onPress={() => {
+        navigation.navigate("Untitled2", {});
+      }}><ImageBackground style={styles.NHweCtAU} source={require("./A line.jpg")} resizeMode="cover"></ImageBackground></Pressable><Pressable onPress={() => {
+        navigation.navigate("Untitled2", {});
+      }}><ImageBackground style={styles.qnvhAiYY} source={require("./ball grow.jpg")} resizeMode="cover"></ImageBackground></Pressable><Pressable onPress={() => {
+        navigation.navigate("Untitled2", {});
+      }}><ImageBackground style={styles.pbLZRzzl} source={require("./Mermaid.jpg")} resizeMode="cover"></ImageBackground></Pressable></ScrollView>
     </SafeAreaView>;
 };
 
@@ -27,8 +36,8 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: "center",
     position: "absolute",
-    top: 0,
-    left: 0,
+    top: -8,
+    left: -1,
     alignItems: "start"
   },
   qnvhAiYY: {
@@ -39,8 +48,8 @@ const styles = StyleSheet.create({
     alignItems: "start",
     justifyContent: "center",
     position: "absolute",
-    top: 2,
-    left: 118
+    top: -6,
+    left: 112
   },
   pbLZRzzl: {
     width: 134,
@@ -48,10 +57,10 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     flex: 1,
     position: "absolute",
-    top: -1,
+    top: -7,
     justifyContent: "center",
     alignItems: "center",
-    left: 263
+    left: 261
   }
 });
 export default Untitled1;
